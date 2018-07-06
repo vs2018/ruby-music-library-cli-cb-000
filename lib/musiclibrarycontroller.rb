@@ -23,7 +23,6 @@ class MusicLibraryController
     4.times do 
       input = gets
     end
-    self.list_songs if input = "list songs"
   end
   
   def list_songs
