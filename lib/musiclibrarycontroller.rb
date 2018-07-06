@@ -3,7 +3,7 @@ require 'pry'
 
 class MusicLibraryController
   
-  attr_accessor :path, :library
+  attr_accessor :path, :library, :list_songs
   
   def initialize(path = "./db/mp3s")
     @path = path
