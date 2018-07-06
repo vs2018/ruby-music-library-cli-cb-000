@@ -91,7 +91,7 @@ class MusicLibraryController
       song = self.list_songs[input - 1]
     end
     
-    array = song.split(/[.-]/)
+    array = song.split(/[.-]/) if song
 
     puts "Playing #{array[2]} by #{array[1]}" if song
   end
