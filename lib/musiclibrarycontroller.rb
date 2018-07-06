@@ -27,7 +27,7 @@ class MusicLibraryController
     4.times do 
       input = gets
     end
-  end
+    end
     
   end
   
