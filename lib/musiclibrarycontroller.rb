@@ -28,14 +28,13 @@ class MusicLibraryController
       input = gets
     end
     end
-    
-  end
-  
-  input = gets
-  
-  if input == "list songs"
+      if input == "list songs"
     self.list_songs
   end
+  end
+
+  
+
   
   def list_songs
     
