@@ -90,6 +90,8 @@ class MusicLibraryController
     if (1..self.list_songs.length).include?(input)
       song = self.list_songs[input - 1]
     end
+    
+    array = song.split(/[.-]/)
 
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
