@@ -27,6 +27,12 @@ class MusicLibraryController
     
   end
   
+  input = gets
+  
+  if input == "list songs"
+    self.list_songs
+  end
+  
   def list_songs
     
     sorted = Song.all.sort_by {|obj| obj.name}
