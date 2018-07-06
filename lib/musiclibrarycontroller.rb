@@ -87,7 +87,7 @@ class MusicLibraryController
     
     
     
-    if (1..self.list_songs.length).include?(input)
+    if (1..Song.all.length).include?(input)
       song = self.list_songs[input - 1]
     end
     
