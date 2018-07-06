@@ -90,10 +90,8 @@ class MusicLibraryController
     if (1..Song.all.length).include?(input)
       song = Song.all.sort_by{|a| a.name}[input - 1]
     end
-    
-    array = song.split(/[.-]/) if song
-
-    puts "Playing #{array[2]} by #{array[1]}" if song
+  
+    puts "Playing #{song.name} by #{song.artist.name}" if song
   end
   
 
