@@ -28,6 +28,7 @@ class MusicLibraryController
   end
   
   def list_songs(args = nil)
+    
     sorted = Song.all.sort_by {|obj| obj.name}
     counter = 1
   
