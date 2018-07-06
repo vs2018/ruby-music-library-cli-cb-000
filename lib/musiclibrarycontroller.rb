@@ -23,7 +23,7 @@ class MusicLibraryController
     4.times do 
       input = gets
     end
-      if gets == "list songs"
+    if gets == "list songs"
     self.list_songs
   end
   end
