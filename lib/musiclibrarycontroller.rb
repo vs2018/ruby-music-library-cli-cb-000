@@ -93,7 +93,7 @@ class MusicLibraryController
     
     array = song.split(/[.-]/)
 
-    puts "Playing #{song.name} by #{song.artist.name}" if song
+    puts "Playing #{array[2]} by #{array[1]}" if song
   end
   
 
