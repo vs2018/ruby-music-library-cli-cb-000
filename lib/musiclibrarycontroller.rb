@@ -88,7 +88,7 @@ class MusicLibraryController
     
     
     if (1..Song.all.length).include?(input)
-      song = self.list_songs[input - 1]
+      song = Song.all.sort_by{|a| a.name}[input - 1]
     end
     
     array = song.split(/[.-]/) if song
