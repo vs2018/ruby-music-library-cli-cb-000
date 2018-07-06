@@ -22,9 +22,7 @@ class MusicLibraryController
     puts "What would you like to do?"
     4.times do 
       input = gets
-      if gets == "list songs"
-        self.list_songs
-      end
+     
     end
     
   end
